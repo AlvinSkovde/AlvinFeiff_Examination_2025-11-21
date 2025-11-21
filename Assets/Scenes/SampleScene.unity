@@ -1665,42 +1665,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: lengthInSec
-      value: 2.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: ShapeModule.radius.value
-      value: 0.34911358
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 48.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 1.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.6024063
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.38470098
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.6132076
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096465507897113378, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
-      propertyPath: InitialModule.gravityModifier.scalar
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 8307363003351271264, guid: 5a881a664e369244c9d8589d7103f937, type: 3}
       propertyPath: m_Name
       value: Portal
