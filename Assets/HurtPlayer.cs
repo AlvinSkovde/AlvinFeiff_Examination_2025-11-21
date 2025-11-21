@@ -8,7 +8,7 @@ public class HurtPlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            collision.gameObject.GetComponent<HealthManager>().TakeDamage(1);
         }
     }
 }

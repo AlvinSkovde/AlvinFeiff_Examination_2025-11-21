@@ -1,16 +1,27 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int health = 0;
+    public int maxHealth = 3;
+
+    public LivesUI livesUI;
+    
+    private void Start()
     {
-        
+        health = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void TakeDamage(int damage)
     {
-        
+        health -= damage;
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        livesUI.updateLives(health);
     }
 }
