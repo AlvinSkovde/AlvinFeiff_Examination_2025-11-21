@@ -4361,6 +4361,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2022393712180839317, guid: 4e6814be1c8a2e346897d670572ea613, type: 3}
   m_PrefabInstance: {fileID: 2691285249656694597}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1870797839 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8585107151438930150, guid: 4e6814be1c8a2e346897d670572ea613, type: 3}
+  m_PrefabInstance: {fileID: 2691285249656694597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1878739088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4762,6 +4767,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5498822971722188076, guid: 4e6814be1c8a2e346897d670572ea613, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1870797839}
     - target: {fileID: 5784986279147504186, guid: 4e6814be1c8a2e346897d670572ea613, type: 3}
       propertyPath: livesUI
       value: 

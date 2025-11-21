@@ -7,14 +7,14 @@ using UnityEngine.InputSystem;
 public class TopDownMovement : MonoBehaviour
 {
     public float maxSpeed = 7;
-    public bool controlEnabled { get; set; } = true; // You can edit this variable from Unity Events
+    public bool controlEnabled { get; set; } = true; 
     private Vector2 moveInput;
     private Rigidbody2D rb;
+    public Animator animator;
     
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-// Set gravity scale to 0 so player won't "fall"
         rb.gravityScale = 0;
     }
     private void Update()
@@ -22,7 +22,6 @@ public class TopDownMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-// Set velocity based on direction of input and maxSpeed
         if (controlEnabled)
         {
             rb.linearVelocity = moveInput.normalized * maxSpeed;
@@ -33,6 +32,14 @@ public class TopDownMovement : MonoBehaviour
         }
 // Write code for walking animation here. (Suggestion: send your current
         //velocity into the Animator for both the x- and y-axis.)
+        if (rb.linearVelocity.x != 0 || rb.linearVelocity.y != 0)
+        {
+            animator.SetBool("Walk", true);
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
+        }
     }
 // Handle Move-input
 // This method can be triggered through the UnityEvent in PlayerInput
