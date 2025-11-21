@@ -6,6 +6,11 @@ public class ChangeScene : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(1);
+        ChangeToNextScene();
+    }
+
+    public void ChangeToNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
